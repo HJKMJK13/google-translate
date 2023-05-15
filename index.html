@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>google translate</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
 
-
-    <script src="./main.js"></script>
+    <p>frontend forever</p>
+    <h1>learn web design and development</h1>
+    <div id="google_translate_element"></div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage:'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <p></p>
 </body>
 </html>
