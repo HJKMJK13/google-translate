@@ -1,6 +1,6 @@
-const selectTag=document.querySelector("select");
+const selectTag=document.querySelectorAll("select");
 selectTag.forEach(tag=>{
-    for(const key in object){
-        
+    for(const country_code in countries){
+        console.log(country_code)
     }
 })
